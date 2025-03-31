@@ -113,3 +113,8 @@ h1.neon-text {
       0 0 80px var(--nc);
   }
 }
+
+a.important {
+  color: #eade99;
+
+}
