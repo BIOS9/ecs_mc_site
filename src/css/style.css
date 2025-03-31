@@ -33,17 +33,6 @@ a:has(h1.neon-text) {
   text-decoration: unset;
 }
 
-code {
-  padding: 2px 4px;
-}
-
-.copy-on-click {
-  cursor: pointer;
-}
-.copy-on-click:hover {
-  background-color: #2a2a2a;
-}
-
 h1.neon-text {
   margin-top: 1em;
   font-weight: normal;
@@ -108,3 +97,25 @@ footer {
     max-width: 100%;
   }
 }
+
+button#server-address {
+  font-family: monospace;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+button#server-address:hover {
+  background-color: #2a2a2a;
+}
+button#server-address:focus {
+  background-color: #2a2a2a;
+  border: 1px solid #5a5a5a;
+}
+
+button#server-address:active {
+  background-color: #4a4a4a;
+}
+

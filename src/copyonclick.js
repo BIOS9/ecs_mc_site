@@ -1,15 +1,13 @@
-for (const e of document.getElementsByClassName("copy-on-click")) {
-  e.onclick = () => {
-    if (e.textContent != null) {
-      navigator.clipboard.writeText(e.textContent);
-      const deleteMe = document.createElement("span");
-      deleteMe.className = "copied";
-      deleteMe.innerText = "(Copied!)";
-      e.insertAdjacentElement("afterend", deleteMe);
+function copyMe(elem) {
+  if (elem.textContent != null) {
+    navigator.clipboard.writeText(elem.textContent);
+    const deleteMe = document.createElement("span");
+    deleteMe.className = "copied";
+    deleteMe.innerText = "(Copied!)";
+    elem.insertAdjacentElement("afterend", deleteMe);
 
-      setTimeout(() => {
-        deleteMe.parentNode.removeChild(deleteMe);
-      }, 2000);
-    }
-  };
+    setTimeout(() => {
+      deleteMe.parentNode.removeChild(deleteMe);
+    }, 2000);
+  }
 }

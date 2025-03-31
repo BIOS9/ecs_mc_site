@@ -4,6 +4,7 @@
     <title>ECS Minecraft Server</title>
     <link href="css/style.css" rel="stylesheet" />
     <script src="cooltitle.js"></script>
+    <script src="copyonclick.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
 
@@ -55,7 +56,7 @@
       >.
     </p>
     <p>
-      The server IP is <code class="copy-on-click">ecs.up-on-the.net</code> 🫶
+      The server IP is <button id="server-address" onclick="copyMe(event.target)">ecs.up-on-the.net</button> 🫶
     </p>
     <h2>What mods are we running?</h2>
     <section id="mod-list">
@@ -69,7 +70,6 @@
         <li>And more...</li>
       </ul>
     </section>
-    <script src="copyonclick.js"></script>
     <footer>
       <img src="badges/valid-html401.gif" alt="Site has valid html 4.01">
       <img src="badges/anybrowser6.gif" alt="Best viewed with any browser!">
