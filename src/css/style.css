@@ -37,6 +37,13 @@ blink {
     50% { opacity: 0; }
 }
 
+a {
+  color: #8ce;
+}
+a:visited {
+  color: #c8e;
+}
+
 a:has(h1.neon-text) {
   color: unset;
   text-decoration: unset;
