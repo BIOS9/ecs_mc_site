@@ -4,7 +4,16 @@
     <title>ECS Minecraft Server</title>
     <link href="css/style.css" rel="stylesheet" />
     <script src="cooltitle.js"></script>
+    <script src="copyonclick.js"></script>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- From https://stackoverflow.com/a/59844733 -->
+    <meta content="ECS Modded Minecraft Server!" property="og:title" />
+    <meta content="Check this page for info on how to join! I love webdev." property="og:description" />
+    <meta content="https://ecs.up-on-the.net/" property="og:url" />
+    <meta content="https://ecs.up-on-the.net/plonk-it.png" property="og:image" />
+    <meta content="#0fa" data-react-helmet="true" name="theme-color" />
   </head>
   <body>
     <a href="/"
@@ -22,7 +31,7 @@
     <img id="divider" src="divider.gif" alt="A gif of various stick figures walking in place">
     <h2>Welcome!</h2>
     <p>
-      We're running a minecraft server for our
+      We're running a minecraft server for the
       <sub
         ><sup
           ><sub><sup>unofficial</sup></sub></sup
@@ -47,7 +56,7 @@
       >.
     </p>
     <p>
-      The server IP is <code class="copy-on-click">ecs.up-on-the.net</code> 🫶
+      The server IP is <button id="server-address" onclick="copyMe(event.target)">ecs.up-on-the.net</button> 🫶
     </p>
     <h2>What mods are we running?</h2>
     <section id="mod-list">
@@ -61,7 +70,6 @@
         <li>And more...</li>
       </ul>
     </section>
-    <script src="copyonclick.js"></script>
     <footer>
       <img src="badges/valid-html401.gif" alt="Site has valid html 4.01">
       <img src="badges/anybrowser6.gif" alt="Best viewed with any browser!">
