@@ -1,25 +1,39 @@
 @keyframes rainbow {
-    0% { color: red; }
-    16% { color: orange; }
-    32% { color: yellow; }
-    48% { color: green; }
-    64% { color: blue; }
-    80% { color: indigo; }
-    100% { color: violet; }
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  32% {
+    color: yellow;
+  }
+  48% {
+    color: green;
+  }
+  64% {
+    color: blue;
+  }
+  80% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
 }
 
 body {
-    background: black;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.705);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: black;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.705);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .wordart {
-    font-size: 48px;
-    font-weight: bold;
-    animation: rainbow 1s infinite linear;
-    text-shadow: 3px 3px 5px white;
+  font-size: 48px;
+  font-weight: bold;
+  animation: rainbow 1s infinite linear;
+  text-shadow: 3px 3px 5px white;
 }
 
 section {
@@ -39,11 +53,13 @@ section#rules {
 }
 
 blink {
-    animation: blinker 0.6s linear infinite;
+  animation: blinker 0.6s linear infinite;
 }
 
 @keyframes blinker {
-    50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 a {
@@ -59,14 +75,14 @@ a:has(h1.neon-text) {
 }
 
 code {
-	padding: 2px 4px;
+  padding: 2px 4px;
 }
 
 .copy-on-click {
-	cursor: pointer;
+  cursor: pointer;
 }
 .copy-on-click:hover {
-	background-color: #2a2a2a;
+  background-color: #2a2a2a;
 }
 
 h1.neon-text {
@@ -116,5 +132,4 @@ h1.neon-text {
 
 a.important {
   color: #eade99;
-
 }
