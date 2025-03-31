@@ -97,3 +97,14 @@ a.important {
 img#divider {
   max-width: 100%;
 }
+
+footer {
+  margin: 0 auto;
+  max-width:80%;
+}
+
+@media only screen and (max-width: 120ch) {
+  footer {
+    max-width: 100%;
+  }
+}
