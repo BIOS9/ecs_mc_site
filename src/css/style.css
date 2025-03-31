@@ -93,3 +93,7 @@ h1.neon-text {
 a.important {
   color: #eade99;
 }
+
+img#divider {
+  max-width: 100%;
+}
