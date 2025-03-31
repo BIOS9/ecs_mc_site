@@ -22,11 +22,20 @@ body {
     text-shadow: 3px 3px 5px white;
 }
 
-section#mod-list {
+section {
   text-align: left;
   width: fit-content;
   display: block;
   margin: 0 auto;
+}
+
+section#rules {
+  max-width: 50%;
+}
+@media only screen and (max-width: 120ch) {
+  section#rules {
+    max-width: 100%;
+  }
 }
 
 blink {
